@@ -17,11 +17,11 @@ define [
     #   @$el.find("input[name=duration]").val @model.get('duration')
 
     # events:
-    #   'click button':                  'saveModel'
     #   'change input[name=title]':      'updateModelFromView'
     #   'change input[name=start_date]': 'updateModelFromView'
     #   'change input[name=start_time]': 'updateModelFromView'
     #   'change input[name=duration]':   'updateModelFromView'
+    #   'click button':                  'saveModel'
     
     # updateModelFromView: (e) =>
     #   target = $(e.target)

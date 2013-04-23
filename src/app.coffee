@@ -21,9 +21,12 @@ define [
       view = new BackboneMeetingView
         model: @model
 
-      # @model.fetch
-      #   success: =>
-      @render view
+      if @model.fetch
+        @model.fetch
+          success: =>
+            @render view
+      else
+        @render view
 
     rivets: ->
       console.log 'rivets'
